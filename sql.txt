@@ -1,0 +1,13 @@
+CREATE TABLE "raw_csv" (
+	"id"	INTEGER,
+	"ticker"	TEXT,
+	"csv"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+)
+
+CREATE TABLE "raw_info" (
+	"id"	INTEGER,
+	"ticker"	TEXT,
+	"info"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+)
