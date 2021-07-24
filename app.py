@@ -21,7 +21,7 @@ def write_info(ticker_list):
             continue
         else:
             js =  json.dumps(info)
-            cur.execute("INSERT INTO raw_info (ticker,info) VALUES (?,?)",(ticker,info))
+            cur.execute("INSERT INTO raw_info (ticker,info) VALUES (?,?)",(ticker,js))
             con.commit()
 
 
